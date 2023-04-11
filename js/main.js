@@ -7,7 +7,11 @@ let linkICon = document.getElementById('linkICon')
 let link = document.getElementById('ver')
 let chewronICon = document.getElementById('chewronICon')
 let form = document.getElementById('form')
-const loader = document.querySelector('.loader')
+let loader = document.querySelector('.loader')
+let bars = document.getElementById('bars')
+let leftContent = document.getElementById('left')
+let mark = document.getElementById('mark')
+
 
 setTimeout(()=> {
     loader.remove()
@@ -16,23 +20,13 @@ setTimeout(()=> {
 let speesh = new SpeechSynthesisUtterance()
 
 
-form.addEventListener('keyup',e => {
-    e.preventDefault()
-    let value = form.inp.value
-
-    speesh.text = value
-    speesh.lang = 'en'
-    window.speechSynthesis.speak(speesh)
-    
-})
 
 
 
 
 
-let bars = document.getElementById('bars')
-let leftContent = document.getElementById('left')
-let mark = document.getElementById('mark')
+
+
 linkICon.addEventListener('click', e => {
     box1.forEach((box)=> {
         box.style.display = 'block'
@@ -66,3 +60,12 @@ mark.addEventListener('click' , e => {
 })
 
 
+form.addEventListener('keyup',e => {
+    e.preventDefault()
+    let value = form.inp.value
+
+    speesh.text = value
+    speesh.lang = 'en'
+    window.speechSynthesis.speak(speesh)
+    
+})
