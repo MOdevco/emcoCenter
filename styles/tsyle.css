@@ -19,6 +19,12 @@
   padding: 10px 15px;
   border-radius: 10px;
 }
+.btn:hover {
+    background: aqua;
+}
+.btn:hover a {
+    color: black;
+}
 .btn a {
   color: white;
 }
@@ -100,6 +106,20 @@
 }
 .navbarLeft ul li a {
   color: black;
+  position: relative;
+}
+.navbarLeft ul li a::after {
+    content: '';
+    background: aqua;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: all 1s;
+}
+.navbarLeft ul li a:hover::after {
+    width: 100%;
 }
 .mark {
   position: absolute;
@@ -184,6 +204,21 @@
 .navbar ul li a {
   color: black;
   font-size: 0.7rem;
+  position: relative;
+
+}
+.navbar ul li a::after {
+    content: '';
+    background: aqua;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: all 1s;
+}
+.navbar ul li a:hover::after {
+    width: 100%;
 }
 
 /* =============section========== */
@@ -271,6 +306,12 @@
   border: none;
   padding: 0.5rem;
 }
+.descBtn button:hover {
+    background: aqua;
+}
+.descBtn button:hover a {
+    color: black;
+}
 .descBtn button a {
   color: white;
 }
@@ -289,6 +330,12 @@
     padding: 1rem;
     width: 100%;
     text-align: center;
+}
+.asaid .box1:hover {
+    background: aqua;
+}
+.asaid .box1:hover a {
+    color: black;
 }
 #chewronICon {
     display: none;
@@ -329,6 +376,10 @@
     color: black;
     font-size: 15px;
 }
+.footLink ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
 .footLink ul li i {
     font-size: 15px;
 }
@@ -350,7 +401,9 @@
     font-size: 15px;
     border-bottom: 3px dotted black;
 }
-
+.footerLink a:hover {
+    color: red;
+}
 
 
 
