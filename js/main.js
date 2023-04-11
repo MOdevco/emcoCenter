@@ -6,11 +6,29 @@ let box1 = document.querySelectorAll('#box1')
 let linkICon = document.getElementById('linkICon')
 let link = document.getElementById('ver')
 let chewronICon = document.getElementById('chewronICon')
+let form = document.getElementById('form')
 const loader = document.querySelector('.loader')
 
 setTimeout(()=> {
     loader.remove()
 },500)
+
+let speesh = new SpeechSynthesisUtterance()
+
+
+form.addEventListener('keyup',e => {
+    e.preventDefault()
+    let value = form.inp.value
+
+    speesh.text = value
+    speesh.lang = 'en'
+    window.speechSynthesis.speak(speesh)
+    
+})
+
+
+
+
 
 let bars = document.getElementById('bars')
 let leftContent = document.getElementById('left')
