@@ -1,15 +1,15 @@
 'use strict'
 
 
-let bars = document.getElementById('bars')
-let leftContent = document.getElementById('left')
-let mark = document.getElementById('mark')
 
 let box1 = document.querySelectorAll('#box1')
 let linkICon = document.getElementById('linkICon')
 let link = document.getElementById('ver')
 let chewronICon = document.getElementById('chewronICon')
 
+let bars = document.getElementById('bars')
+let leftContent = document.getElementById('left')
+let mark = document.getElementById('mark')
 linkICon.addEventListener('click', e => {
     box1.forEach((box)=> {
         box.style.display = 'block'
