@@ -7,6 +7,18 @@
   font-size: 20px;
   list-style: none;
 }
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: red;
+}
+*::-webkit-scrollbar-track {
+  background: aqua;
+}
 a {
   color: black;
 }
@@ -94,6 +106,7 @@ a {
     rgba(114, 195, 251, 1) 99%
   );
   position: fixed;
+  z-index: 10;
   top: 0;
 }
 
@@ -589,6 +602,7 @@ a {
     flex-direction: column;
   }
 }
+
 @media (max-width: 650px) {
   .locationNav {
     flex-direction: column;
@@ -627,6 +641,9 @@ a {
   }
   .desc .descTitle {
     height: 90vh;
+  }
+  .wrapper {
+    padding: 0 2rem;
   }
 }
 
