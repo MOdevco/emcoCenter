@@ -645,6 +645,9 @@ a {
   .wrapper {
     padding: 0 2rem;
   }
+  .searchBtn {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 350px) {
@@ -654,8 +657,5 @@ a {
   .documetSearch h1 {
     font-size: 1rem;
   }
-  .searchBtn {
-   
-    flex-direction: column;
-  } 
+ 
 }
