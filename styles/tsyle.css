@@ -7,7 +7,33 @@
   font-size: 20px;
   list-style: none;
 }
-
+a {
+  color: black;
+}
+.loader {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.loader .load {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 100px;
+  height: 100px;
+  border-bottom:5px solid black;
+  animation: animate 1s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(360deg);
+  }
+}
 .wrapper {
   max-width: 1175px;
   margin: 0 auto;
@@ -463,6 +489,10 @@
   padding: 0.5rem 2rem;
   color: white;
 }
+.searchBtn .bt:hover {
+  background: aqua;
+  color: black;
+}
 .searchBtn .doted {
   border-bottom: 3px dotted black;
 }
@@ -483,6 +513,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  min-height: 100vh;
 }
 .mainDoc {
   display: flex;

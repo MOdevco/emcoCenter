@@ -6,6 +6,11 @@ let box1 = document.querySelectorAll('#box1')
 let linkICon = document.getElementById('linkICon')
 let link = document.getElementById('ver')
 let chewronICon = document.getElementById('chewronICon')
+const loader = document.querySelector('.loader')
+
+setTimeout(()=> {
+    loader.remove()
+},500)
 
 let bars = document.getElementById('bars')
 let leftContent = document.getElementById('left')
