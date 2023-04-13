@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 20px;
+    list-style: none;
+  }
+
+  .wrapper {
+    max-width: 1175px;
+    margin: 0 auto;
+  }
+  
+/* start section */
+.section {
+    width: 100%;
+    padding-top: 2rem;
+}
+.mainImg {
+    
+    background-image: url(../images/img.png);
+    height: 40vh;
+    background-repeat: no-repeat;
+}
+.mainImg .h1 {
+    color: white;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainImg .h1 h1 {
+    font-size: 2.5rem;
+}
+
+.mainTitle .h1 {
+    color: white;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainTitle .h1 h1 {
+    font-size: 2.5rem;
+}
+.mainTitle .h1 h1 {
+    font-size: 2.5rem;
+}
+
+.mainTitle .Title {
+    height: 20vh;
+}
+.mainTitle .Title h1 {
+    font-size: 1.5rem;
+}
+.midle {
+    display: flex;
+    gap: 2rem;
+}
+.Main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.mainDoc {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    background: #F1F1F1;
+    padding: 1rem;
+}
+.mainKarta img {
+    width: 100%;
+}
+.mainObrash {
+    display: flex;
+    flex-direction: column;
+    background: #F1F1F1;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+.mainObrash h1 {
+    font-size: 1.3rem;
+}
+.mainInput {
+    background: white;
+    padding: 0.8rem;
+}
+.mainInput input {
+    padding: 0.3rem 1rem;
+    border: none;
+    
+}
+.inp {
+    display: flex;
+    flex-direction: column;
+}
+.mainInput1 {
+    background: white;
+    padding: 0.8rem;
+    padding-right: 13rem;
+}
+.mainInput1 input {
+    padding: 2rem 1rem;
+    border: none;
+}
+.mainCheck button {
+    background: white;
+    padding: 0.6rem;
+    border: none;
+}
+.mainEnd {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+.mainBtn button {
+    background: #E2231A;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+}
+.mainBtn  a {
+    color: white;
+   
+}
+.mainlinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 80rem;
+}
+.mainlinks .box1 {
+    background: #FFFFFF;
+    border: 1px solid rgba(226, 35, 26, 0.5);
+    box-shadow: 0px 0px 50px rgba(181, 181, 181, 0.25);
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+#chewronICon {
+    display: none;
+}
+
+#box1 {
+    display: none;
+}
+.mainlinks .box1 a {
+    font-size: 15px;
+}
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.link a {
+    border-bottom: 3px dotted black;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .inp {
+      display: none;
+    }
+    .midle {
+        display: block;
+    }
+    .mainlinks {
+        margin-top: 2rem;
+       
+    }
+    .section {
+        height: 10%;
+    }
+  }
+  @media (max-width: 650px) {
+    .wrapper {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .mainImg .h1 h1 {
+      font-size: 0.9rem;
+    }
+     .mainTitle .Title h1 {
+    font-size: 0.9rem;
+    }
+    .mainTitle .Title p {
+    font-size: 0.7rem;
+    }
+   .mainDoc {
+    padding-bottom: 2rem;
+   }
+    .mainDoc h1 {
+     font-size: 0.7rem;
+    }
+    .mainDoc p {
+        font-size: 0.6rem;
+    }
+    .mainP p {
+        font-size: 0.6rem;
+    }
+    .mainObrash h1 {
+        font-size: 0.7rem;
+    }
+    .mainInput input {
+        font-size: 0.5rem;
+    }
+    .mainEnd p {
+        font-size: 0.6rem;
+    }
+    .mainBtn button {
+        padding: 0.4rem;
+    }
+    
+    .mainBtn a {
+        font-size: 0.5rem;
+    }
+
+  
+  }
+  
+  @media (max-width: 500px) {
+    .inp {
+      display: none;
+    }
+    
+  }
+  @media (max-width: 315px) {
+    .mainTitle .Title h1 {
+        font-size: 0.6rem;
+        }
+    .mainTitle .Title p {
+            font-size: 0.5rem;
+        }
+
+  }
+  @media (max-width: 240px) {
+
+.mainObrash h1 {
+    font-size: 0.5rem;
+}
+.mainInput {
+    padding: 0.4rem;
+}
+.mainInput input {
+    font-size: 0.2rem;
+}
+.mainEnd p {
+    font-size: 0.3rem;
+}
+.mainBtn button {
+    padding: 0.2rem;
+}
+
+.mainBtn a {
+    font-size: 0.4rem;
+}
+.mainCheck button {
+    padding: 0.4rem;
+}
+.mainBtn button {
+    padding: 0rem 0.4rem;
+}    
+.mainBtn a {
+    font-size: 0.3rem;
+}
+    
+  }
+  @media (max-width: 210px) {
+    .mainImg .h1 h1 {
+        font-size: 0.5rem;
+    }
+    .mainTitle .Title h1 {
+        font-size: 0.4rem;
+    }
+    .mainTitle .Title p {
+        font-size: 0.4rem;
+    }
+    .mainDoc h1 {
+        font-size: 0.5rem;
+    }
+   .mainDoc p {
+       font-size: 0.4rem;
+   }
+   .mainP p {
+       font-size: 0.4rem;
+   }
+
+  }
+  @media (max-width: 158px) {
+    .mainObrash h1 {
+        font-size: 0.3rem;
+    }
+    .mainInput input {
+        font-size: 0.1rem;
+        
+    }
+    .mainP p {
+        font-size: 0.3rem;
+    }
+    .mainCheck button {
+        padding: 0.2rem;
+    }
+    .mainEnd p {
+        font-size: 0.1rem;
+    }
+    .mainlinks .box1 a {
+        font-size: 0.4rem;
+    }
+    .link a {
+        font-size: 0.6rem;
+    }
+    .link i {
+        font-size: 0.6rem;
+    }
+  }
+  @media (max-width: 132px) {
+    .mainImg .h1 h1 {
+        font-size: 0.3rem;
+    }
+    .mainInput input {
+       padding: 0.1rem;
+    }
+    .mainObrash h1 {
+        font-size: 0.2rem;
+    }
+    .mainEnd {
+        display: block;
+    }
+  }
+  @media (max-width: 98px) {
+    .mainTitle .Title h1 {
+        font-size: 0.3rem;
+    }
+    .mainTitle .Title p {
+        font-size: 0.2rem;
+    }
+.mainDoc h1 {
+    font-size: 0.2rem;
+}
+.mainDoc p {
+    font-size: 0.2rem;
+}
+.mainObrash h1 {
+    font-size: 0.1rem;
+}
+.mainObrash input {
+    font-size: 0.01rem;
+} 
+.mainP p {
+    font-size: 0.1rem;
+} 
+.mainEnd p {
+    font-size: 0.05rem;
+}
+.mainBtn .btn button {
+    padding:  0rem 0.5rem;
+}
+.mainBtn .btn a {
+    font-size: 0.2rem;
+}
+.link a {
+    font-size: 0.4rem;
+}
+.link i {
+    font-size: 0.4rem;
+}
+.link a {
+    border-bottom: 1px dotted black;
+}
+  }
